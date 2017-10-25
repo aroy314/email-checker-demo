@@ -23,7 +23,7 @@
 
 </head>
 
-<body style="background-image: url('https://drscdn.500px.org/photo/186489967/q%3D80_m%3D1500/v2?webp=true&sig=18c28bb1800de0763190dbd822850bcba1c58f6507aba42c3a6ec83d199670f2')">
+<body style="background-color: #000">
 
 <div class="container" id="app">
     <div class="header clearfix">
@@ -34,12 +34,8 @@
                     <a href="">Home</a>
                 </router-link>
 
-                <router-link to="/about" tag="li">
-                    <a href="">About</a>
-                </router-link>
-
-                <router-link to="/contact" tag="li">
-                    <a href="">Contact</a>
+                <router-link to="/batch" tag="li">
+                    <a href="">Batch Check</a>
                 </router-link>
 
             </ul>
@@ -50,10 +46,10 @@
     <router-view></router-view>
 
     <footer class="footer">
-        <p>&copy; {{ Carbon\Carbon::now()->year }} <a href="http://www.tintnaingwin.com">amigo</a>
-            <a href="https://www.facebook.com/tintnaingwinn" style="color: #3b5998" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/tintngwin" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
-            <a href="https://github.com/tintnaingwinn/email-checker-demo" style="color: #5e5e5e"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+        <p>&copy; {{ Carbon\Carbon::now()->year }}
+            <a target="_blank" href="http://www.tintnaingwin.com">amigo</a>
+            <a target="_blank" href="http://about.me/alexandreroy">aroy314</a>
+            <a target="_blank" href="https://github.com/aroy314/email-checker-demo" style="color: #5e5e5e"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
         </p>
 
     </footer>

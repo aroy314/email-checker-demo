@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::post('/check','EmailCheckController@index');
+Route::post('/checkbatch','EmailCheckController@batch');
 
 Route::get('test','EmailCheckController@test');
 
