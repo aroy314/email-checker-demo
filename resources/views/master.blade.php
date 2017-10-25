@@ -38,14 +38,6 @@
                     <a href="">Batch Check</a>
                 </router-link>
 
-                <router-link to="/about" tag="li">
-                    <a href="">About</a>
-                </router-link>
-
-                <router-link to="/contact" tag="li">
-                    <a href="">Contact</a>
-                </router-link>
-
             </ul>
         </nav>
         <h3 style="color: white">Email Checker</h3>
