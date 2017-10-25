@@ -19,6 +19,8 @@
     "vue": "^2.4.1"
   },
   "dependencies": {
+    "babel-loader": "^7.1.2",
+    "sass-loader": "^6.0.6",
     "sw-precache-webpack-plugin": "^0.11.4",
     "sw-toolbox": "^3.6.0",
     "vue-router": "^2.4.0"
