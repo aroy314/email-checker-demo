@@ -17,7 +17,7 @@
 
         // load script to populate offline page list
         if (document.getElementById('cachedpagelist') && 'caches' in window) {
-            var scr = document.createElement('script');
+            let scr = document.createElement('script');
             scr.src = '/js/offlinepage.js';
             scr.async = 1;
             document.head.appendChild(scr);
@@ -29,7 +29,7 @@
 // remove URL #target after navigation animation and page unload
     window.addEventListener('unload', removeTarget, false);
 
-    var nav = document.getElementById('nav');
+    let nav = document.getElementById('nav');
     if (nav) nav.addEventListener('animationend', function() { setTimeout(removeTarget, 100); }, false);
 
     function removeTarget() {
@@ -41,7 +41,7 @@
     window.addEventListener('load', function() {
 
         // start
-        var pItem = document.getElementsByClassName('progressive replace'), timer;
+        let pItem = document.getElementsByClassName('progressive replace'), timer;
 
         window.addEventListener('scroll', scroller, false);
         window.addEventListener('resize', scroller, false);
@@ -62,7 +62,7 @@
         // image in view?
         function inView() {
 
-            var wT = window.pageYOffset, wB = wT + window.innerHeight, cRect, pT, pB, p = 0;
+            let wT = window.pageYOffset, wB = wT + window.innerHeight, cRect, pT, pB, p = 0;
             while (p < pItem.length) {
 
                 cRect = pItem[p].getBoundingClientRect();
@@ -83,11 +83,11 @@
         // replace with full image
         function loadFullImage(item) {
 
-            var href = item && (item.href || item.getAttribute('data-href'));
+            let href = item && (item.href || item.getAttribute('data-href'));
             if (!href) return;
 
             // load image
-            var img = new Image();
+            let img = new Image();
             if (item.dataset) {
                 img.srcset = item.dataset.srcset || '';
                 img.sizes = item.dataset.sizes || '';
@@ -107,7 +107,7 @@
                 item.appendChild(img).addEventListener('animationend', function(e) {
 
                     // remove preview image
-                    var pImg = item.querySelector && item.querySelector('img.preview');
+                    let pImg = item.querySelector && item.querySelector('img.preview');
                     if (pImg) {
                         e.target.alt = pImg.alt || '';
                         item.removeChild(pImg);
