@@ -34,6 +34,10 @@
                     <a href="">Home</a>
                 </router-link>
 
+                <router-link to="/batch" tag="li">
+                    <a href="">Batch Check</a>
+                </router-link>
+
                 <router-link to="/about" tag="li">
                     <a href="">About</a>
                 </router-link>
